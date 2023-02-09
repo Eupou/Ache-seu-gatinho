@@ -22,6 +22,10 @@ img {
   display: block;
 }
 
+:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.849);
+}
+
 .header {
   position: fixed;
   z-index: 999999;
@@ -138,7 +142,6 @@ img {
   margin: auto;
   width: 95%;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
 }
 
 .cat-info {
@@ -235,4 +238,113 @@ img {
 .cat-description {
   margin-top: 10px;
   text-align: center;
+}
+
+.warning {
+  color: rgb(243, 55, 55);
+  font-size: 15px;
+}
+
+.input-filled {
+  display: none;
+}
+
+.find-your-cat {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.form-cat-name {
+  margin-top: 15px;
+}
+
+.form-cat-name input {
+  border-color: white;
+  color: white;
+  font-size: 18px;
+  padding: 7px 10px;
+  border: 1px solid white;
+  background-color: black;
+}
+
+.form-cat-img {
+  margin-top: 15px;
+}
+
+.form-cat-description {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-cat-description textarea {
+  resize: none;
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  color: white;
+  padding: 1px;
+  border: 1px solid white;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.form-cat-sex {
+  margin-top: 15px;
+}
+
+.form-cat-sex input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px white dashed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-cat-sex input:hover {
+  transform: rotate(45deg);
+  background-color: rgba(255, 254, 254, 0.322);
+  border-color: rgba(255, 254, 254, 0.582);
+}
+
+.form-cat-sex input:checked {
+  background-color: white;
+}
+
+.container-submit-cat-info {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.btn-submit-cat-info {
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 0 25px;
+  height: 40px;
+  font-size: 16px;
+  transition: 100ms ease-in;
+}
+
+.btn-submit-cat-info:hover {
+  background-color: white;
+  color: black;
+}
+
+.d-none {
+  display: none;
+}
+
+.pagination {
+  text-align: center;
+  padding: 10px 0;
 }

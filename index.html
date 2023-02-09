@@ -30,10 +30,10 @@
 
       <div class="container-lost-cats">
         <div class="cat-status">
-          <p class="btn-cat-status active-status-js">
+          <p class="btn-cat-status btn-found-a-cat active-status-js">
             Ajude a encontrar o gatinho de alguém
           </p>
-          <p class="btn-cat-status">Encontre seu gatinho</p>
+          <p class="btn-cat-status btn-find-your-cat">Encontre seu gatinho</p>
           <p class="placeholder"></p>
         </div>
 
@@ -70,6 +70,65 @@
               coisas
             </div>
           </div>
+        </div>
+
+        <div class="find-your-cat d-none">
+          <form action="post" id="cat-form">
+            <h3 class="form-title">
+              Descreva algumas características do seu gato
+            </h3>
+
+            <div class="form-cat-name">
+              <div>
+                <label for="name">Nome: </label>
+                <input type="text" name="cat-name" id="name" />
+              </div>
+              <div class="warning input-filled">
+                Adicione o nome do seu gato!
+              </div>
+            </div>
+
+            <div class="form-cat-img">
+              <div>
+                <label for="new-cat-img">Adicione uma foto do seu gato</label>
+                <input type="file" accept="image/*" name="" id="new-cat-img" />
+              </div>
+              <div class="warning input-filled">
+                Adicione pelo menos uma foto do seu gato!
+              </div>
+            </div>
+
+            <div class="form-cat-description">
+              <div>
+                <label for="new-cat-description"
+                  >Adicione uma pequena descrição</label
+                >
+                <textarea id="new-cat-description"></textarea>
+              </div>
+              <div class="warning input-filled">
+                Adicione 2 palavras a sua descrição!
+              </div>
+            </div>
+
+            <div class="form-cat-sex">
+              <label for="male">Macho</label>
+              <input type="radio" name="sex" value="male" id="male" checked />
+
+              <label for="female">Fêmea</label>
+              <input type="radio" name="sex" value="female" id="female" />
+            </div>
+
+            <div class="container-submit-cat-info">
+              <button
+                class="btn-submit-cat-info"
+                id="btn-submit-cat-information"
+                formmethod="post"
+                type="submit"
+              >
+                Achar meu gatinho
+              </button>
+            </div>
+          </form>
         </div>
 
         <div class="pagination">
