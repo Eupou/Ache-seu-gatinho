@@ -139,14 +139,15 @@ img {
 
 .cat-info-wrapper {
   display: flex;
-  margin: auto;
-  width: 95%;
   flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: aliceblue; */
+  width: 90vw;
+  margin: auto;
 }
 
 .cat-info {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 20px 0 0 15px;
   display: flex;
   padding: 10px;
   border: 1px solid white;
@@ -345,6 +346,40 @@ img {
 }
 
 .pagination {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue; */
   padding: 10px 0;
+}
+
+.num-container {
+  display: flex;
+  justify-content: center;
+}
+
+.number {
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+}
+
+.selected {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.arrow-left-small {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.arrow-right-small {
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 18px;
 }
