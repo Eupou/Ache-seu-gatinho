@@ -250,8 +250,27 @@
 
             <div class="form-cat-img">
               <div>
-                <label for="new-cat-img">Adicione uma foto do seu gato</label>
-                <input type="file" accept="image/*" name="" id="new-cat-img" />
+                <label
+                  class="preview-cat-img"
+                  for="new-cat-img"
+                  title="Clique para selecionar uma foto"
+                  >Adicione uma foto do seu gato</label
+                >
+                <input
+                  type="file"
+                  accept="image/*"
+                  name=""
+                  id="new-cat-img"
+                  class="input-cat-img"
+                  onchange="previewCatImg()"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-preview"
+                  id="img-preview"
+                  src="http://placeholder.com/300"
+                />
               </div>
               <div class="warning input-filled">
                 Adicione pelo menos uma foto do seu gato!
@@ -301,5 +320,6 @@
     <script src="pagination.js"></script>
     <script src="catsCarousel.js"></script>
     <script src="switchCatStatus.js"></script>
+    <script src="previewCatImg.js"></script>
   </body>
 </html>

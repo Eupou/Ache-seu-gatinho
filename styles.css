@@ -246,6 +246,29 @@ img {
   font-size: 15px;
 }
 
+.img-preview {
+  margin-top: 15px;
+  height: 300px;
+  width: 300px;
+}
+
+.preview-cat-img {
+  margin-top: 50px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid white;
+}
+
+.preview-cat-img:hover {
+  background-color: white;
+  color: black;
+  transition: 100ms ease-in;
+}
+
+.input-cat-img {
+  display: none;
+}
+
 .input-filled {
   display: none;
 }
@@ -271,7 +294,7 @@ img {
 }
 
 .form-cat-img {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .form-cat-description {
@@ -305,7 +328,7 @@ img {
   height: 15px;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: 0.2s ease-in;
 }
 
 .form-cat-sex input:hover {
