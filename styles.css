@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   padding: 0;
   border: 0;
@@ -8,7 +10,7 @@ body {
   color: white;
   height: 300vh;
   background-color: black;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url(img/DALL·E\ 2023-02-05\ 12.58.08\ -\ Space\ oil\ paint\ stars\ like\ dots.png);
   background-size: 100%;
 }
@@ -246,6 +248,14 @@ img {
   font-size: 15px;
 }
 
+.container-img-layout {
+  width: 300px;
+}
+
+.container-cat-img-button {
+  margin-top: 10px;
+}
+
 .img-preview {
   margin-top: 15px;
   height: 300px;
@@ -255,11 +265,19 @@ img {
 .preview-cat-img {
   margin-top: 50px;
   cursor: pointer;
-  padding: 10px 15px;
-  border: 1px solid white;
 }
 
-.preview-cat-img:hover {
+.btn-cat-img {
+  box-sizing: border-box;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.btn-cat-img:hover {
   background-color: white;
   color: black;
   transition: 100ms ease-in;
@@ -284,13 +302,39 @@ img {
   margin-top: 15px;
 }
 
-.form-cat-name input {
+.container-cat-name {
+  position: relative;
+  height: 30px;
+}
+
+.container-cat-name input {
+  position: absolute;
   border-color: white;
   color: white;
   font-size: 18px;
+  width: 100%;
   padding: 7px 10px;
   border: 1px solid white;
+  background-color: transparent;
+}
+
+.container-cat-name label {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  z-index: 1;
   background-color: black;
+  padding: 0 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.container-cat-name input:focus + label {
+  transform: translateY(-20px) translateX(7px);
+}
+
+input:not(:placeholder-shown) + label {
+  transform: translateY(-20px) translateX(7px);
 }
 
 .form-cat-img {
@@ -309,9 +353,9 @@ img {
   height: 250px;
   background-color: black;
   color: white;
-  padding: 1px;
+  padding: 5px;
   border: 1px solid white;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
