@@ -408,10 +408,6 @@ input:not(:placeholder-shown) + label {
   color: black;
 }
 
-.d-none {
-  display: none;
-}
-
 .pagination {
   display: flex;
   justify-content: center;
