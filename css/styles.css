@@ -11,7 +11,7 @@ body {
   height: 300vh;
   background-color: black;
   font-family: "Roboto", sans-serif;
-  background-image: url(img/DALL·E\ 2023-02-05\ 12.58.08\ -\ Space\ oil\ paint\ stars\ like\ dots.png);
+  background-image: url(../img/backgroundImg.png);
   background-size: 100%;
 }
 
@@ -246,6 +246,7 @@ img {
 .warning {
   color: rgb(243, 55, 55);
   font-size: 15px;
+  margin-top: 10px;
 }
 
 .container-img-layout {
@@ -387,7 +388,16 @@ input:not(:placeholder-shown) + label {
 
 .container-submit-cat-info {
   display: flex;
+  align-items: center;
+  height: 70px;
   flex-direction: row-reverse;
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
 }
 
 .btn-submit-cat-info {

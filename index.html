@@ -251,7 +251,7 @@
               </div>
             </div>
 
-            <div class="form-cat-img">
+            <div class="form-cat-img" id="img">
               <div class="container-img-layout">
                 <div>
                   <img
@@ -273,7 +273,7 @@
                   <input
                     type="file"
                     accept="image/*"
-                    name=""
+                    name="cat-img"
                     id="new-cat-img"
                     class="input-cat-img"
                     onchange="previewCatImg()"
@@ -286,35 +286,46 @@
               </div>
             </div>
 
-            <div class="form-cat-description">
+            <div class="form-cat-description" id="description">
               <div>
                 <label for="new-cat-description"
                   >Adicione uma pequena descrição</label
                 >
-                <textarea id="new-cat-description"></textarea>
+                <textarea
+                  id="new-cat-description"
+                  name="cat-description"
+                ></textarea>
               </div>
               <div class="warning input-filled">
-                Adicione 2 palavras a sua descrição!
+                Adicione 3 palavras a sua descrição!
               </div>
             </div>
 
             <div class="form-cat-sex">
               <label for="male">Macho</label>
-              <input type="radio" name="sex" value="male" id="male" checked />
+              <input
+                type="radio"
+                name="cat-sex"
+                value="male"
+                id="male"
+                checked
+              />
 
               <label for="female">Fêmea</label>
-              <input type="radio" name="sex" value="female" id="female" />
+              <input type="radio" name="cat-sex" value="female" id="female" />
             </div>
 
             <div class="container-submit-cat-info">
-              <button
-                class="btn-submit-cat-info"
-                id="btn-submit-cat-information"
-                formmethod="post"
-                type="submit"
-              >
-                Achar meu gatinho
-              </button>
+              <a class="btn-link" href="">
+                <button
+                  class="btn-submit-cat-info"
+                  id="btn-submit-cat-information"
+                  formmethod="post"
+                  type="button"
+                >
+                  Achar meu gatinho
+                </button>
+              </a>
             </div>
           </form>
         </div>
@@ -326,9 +337,11 @@
         </div>
       </div>
     </main>
+    <script src="js/fakeDataBase.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/catsCarousel.js"></script>
     <script src="js/switchCatStatus.js"></script>
     <script src="js/previewCatImg.js"></script>
+    <script src="js/handleFormData.js"></script>
   </body>
 </html>
